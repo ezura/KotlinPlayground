@@ -19,3 +19,16 @@ fun main() {
     val sf2: String = _sf(S(), 1)
 }
 
+fun f() {
+    val v: Int? = 300
+    val v2: Int? = 300
+    v === v2
+    // false
+}
+
+fun _f() {
+    val v: Int = 300
+    val v2: Int = 300
+    v === v2
+    // true
+}

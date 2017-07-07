@@ -9,6 +9,8 @@ interface I {
     abstract fun f()
 }
 
+
+
 fun call(i: I) { i.f() }
 
 fun main() {
@@ -18,6 +20,8 @@ fun main() {
             print("obj")
         }
     })
+
+    listOf<Int>().run {  }
 
     // This special support only works for interfaces and not abstract classes, even if the abstract class only has a single method.
 //    call{ print…("sam") }
