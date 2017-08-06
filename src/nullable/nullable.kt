@@ -6,10 +6,12 @@ package nullable
 
 fun f(v: Int?) {
     v?.dec()
+    v == null
 }
 
 fun main() {
     val v: Int? = 1
+    v == null
     val n = listOf<Int>()
 
     v?.dec()
